@@ -15,7 +15,7 @@ function setup() {
    engine = Engine.create();
    world = engine.world;
 
-ground1=new Ground(1200,650);
+ground1=new Ground(1200,650,500,20);
 
  block1=new Block(1200,600);
  block2=new Block(1100,600);
@@ -34,8 +34,21 @@ ground1=new Ground(1200,650);
  block15=new Block(1050,500);
  block16=new Block(1300,500);
  block17=new Block(1350,500);
+ block18=new Block(1200,400);
+ block19=new Block(1100,400);
+ block20=new Block(1250,400);
+ block21=new Block(1150,400);
+
+
+
+
+
+
+
  
 polygon1=new Polygon();
+
+//ground2=new Ground(10,630,1500,20);
 
 sling1 = new sling(polygon1.body,{x:200,y:600});
 
@@ -48,6 +61,7 @@ function draw() {
 background("brown");
 
 ground1.display();
+//ground2.dispaly();
 
 block1.display();
 block2.display();
@@ -66,7 +80,10 @@ block13.display();
 block15.display();
 block16.display();
 block17.display();
-
+block18.display();
+block19.display();
+block20.display();
+block21.display();
 polygon1.display();
 
 }
