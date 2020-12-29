@@ -1,6 +1,11 @@
 class Block{
     constructor(x,y){
-        this.body=Matter.Bodies.rectangle(x,y,50,70);
+        var options={
+            firction:0.0,
+            density:0.1,
+            restitution:0.4
+        }
+        this.body=Matter.Bodies.rectangle(x,y,50,70,options);
         World.add(world,this.body);
     }
 
@@ -8,7 +13,7 @@ class Block{
         
         var pos=this.body.position
         rectMode(CENTER) 
-        fill("black");
+        fill("pink");
         strokeWeight(2);
         stroke("white");
 
