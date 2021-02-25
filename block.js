@@ -1,8 +1,8 @@
 class Block{
     constructor(x,y){
         var options={
-            firction:0.0,
-            density:0.1,
+            friction:0.0,
+            
             restitution:0.4
         }
         this.body=Matter.Bodies.rectangle(x,y,50,70,options);
